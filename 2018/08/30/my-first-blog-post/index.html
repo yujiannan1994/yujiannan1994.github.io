@@ -397,6 +397,31 @@
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
     })
+
+    // L2Dwedget
+    async("//cdn.jsdelivr.net/npm/live2d-widget@3.0.5/lib/L2Dwidget.min.js", function(){
+        L2Dwidget.init({
+            "model": {
+                "jsonPath": "live2d_models/wanko.model.json",
+                "scale": 1
+            },
+            "display": {
+                "position": "left",
+                "width": 120,
+                "height": 240,
+                "hOffset": -20,
+                "vOffset": -120
+            },
+            "mobile": {
+                "show": true,
+                "scale": 0.5
+            },
+            "react": {
+                "opacityDefault": 0.7,
+                "opacityOnHover": 0.2
+            }
+        });
+    })
 </script>
 
 
