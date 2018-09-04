@@ -373,7 +373,7 @@
 
 <!--L2Dwidget.js -->
 <script>
-    async("//cdn.jsdelivr.net/npm/live2d-widget@3.0.5/lib/L2Dwidget.min.js", function(){
+    async('/js/L2Dwidget.min.js', function(){
         L2Dwidget.init({
             "model": {
                 "jsonPath": "live2d_models/wanko.model.json",
@@ -387,7 +387,7 @@
                 "vOffset": -120
             },
             "mobile": {
-                "show": true,
+                "show": false,
                 "scale": 0.5
             },
             "react": {
